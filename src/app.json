@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/reservation/reservation",
+    "pages/service_comment/service_comment",
+    "pages/mini_index/mini_index",
+    "pages/select_time/select_time",
+    "pages/personal/personal",
+    "pages/training/training",
+    "pages/maternitymatron_list/maternitymatron_list",
+    "pages/test_shaixuan/test_shaixuan",
+    "pages/test_filter/test_filter",
+    "pages/collection/collection",
+    "pages/mylist/mylist",
+    "pages/mylist_maternitymatron/mylist_maternitymatron",
+    "pages/mylist_comment/mylist_comment",
+    "pages/video_uploadfirst/video_uploadfirst",
+    "pages/mybinding/mybinding",
+    "pages/video_uploadsecond/video_uploadsecond",
+    "pages/success/success"
+
+
+
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "backgroundColor": "#f8f8f8",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#cfcfcf",
+    "selectedColor": "#FE7685",
+    "borderStyle": "black",
+    "backgroundColor": "#f8f8f8",
+    "position": "bottom",
+    "list": [{
+      "pagePath": "pages/mini_index/mini_index",
+      "iconPath": "images/主页-normal.png",
+      "selectedIconPath": "images/主页.png",
+      "text": "主页"
+    }, {
+      "pagePath": "pages/service_comment/service_comment",
+      "iconPath": "images/person-normal.png",
+      "selectedIconPath": "images/person1.png",
+      "text": "个人"
+    }]
+  }
+}

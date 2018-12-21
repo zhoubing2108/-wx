@@ -1,0 +1,66 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-panel weui-panel_access" class="box_rectangle" style='text-align:center;height:300px'>
+            <view class="weui-panel__bd" class="weui-article">
+                <navigator class=" weui-media-box_appmsg"  hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd"  style='width:50%' >
+                        <image class="weui-media-box__thumb" style="height:190px;border-radius:10px"  src="../../images/cars.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg" style="width:50%">
+                       
+                        <view style="height:190px">
+                         <view class="weui-media-box__title">标题一 ***** 价格</view>
+                        特长描述：由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。由各种物质组成的巨型球状天体，叫做星球wwwwwwwwwwwf凡人烦热人方法让芳芳</view>
+                    </view> 
+                </navigator>
+                <view class='mypanel'>
+                  <view class="weui-flex" style='font-size:20px'>
+                    <view class="weui-flex__item"><view class="placeholder">200</view></view>
+                    <view class="weui-flex__item"><view class="placeholder">199h</view></view>
+                    <view class="weui-flex__item"><view class="placeholder">93%</view></view>
+                  </view>
+                  <view class="weui-flex">
+                    <view class="weui-flex__item"><view class="placeholder">服务经验值</view></view>
+                    <view class="weui-flex__item"><view class="placeholder">培训课时</view></view>
+                    <view class="weui-flex__item"><view class="placeholder">好评率</view></view>
+                  </view>
+                </view>
+            </view>
+        </view>
+        <view class='weui-article'>
+          <view class='mybox'>
+            <view class='canvasCon' bindtap='clickCanvas'>
+              <canvas  class="canvas" canvas-id="radarcanvas1" disable-scroll="false" style="width:{{canvasW}}rpx; height:{{canvasH}}rpx;" />
+              <canvas class="canvas" canvas-id="radarcanvas2" disable-scroll="false" style="width:{{canvasW}}rpx; height:{{canvasH}}rpx;" />
+              <canvas class="canvas" canvas-id="radarcanvas3" disable-scroll="false" style="width:{{canvasW}}rpx; height:{{canvasH}}rpx;" />
+              <canvas class="canvas" canvas-id="radarcanvas4" disable-scroll="false" style="width:{{canvasW}}rpx; height:{{canvasH}}rpx;" />
+              <canvas class="canvas" canvas-id="radarcanvas5" disable-scroll="false" style="width:{{canvasW}}rpx; height:{{canvasH}}rpx;" />
+              </view>
+          </view>
+        </view>
+        <view class="weui-article">
+            <view class="weui-article__section" class='myshadow'>
+                <view class="weui-article__section" >
+                    
+                    <view class="weui-article__h3">2018年2月--客户</view>
+                    <view class="weui-article__p">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </view>
+                    <view class="page__bd page__bd_spacing">
+                    <view class="weui-flex">
+                        <view class="weui-flex__item"><view class="placeholder" class='myflex'><image class="weui-media-box__thumb" src="../../images/cars.png" /></view></view>
+                        <view class="weui-flex__item"><view class="placeholder" class='myflex'><image class="weui-media-box__thumb" style="height:100%" src="../../images/cars.png" /></view></view>
+                        <view class="weui-flex__item"><view class="placeholder" class='myflex'><image class="weui-media-box__thumb" style="height:100%" src="../../images/cars.png" /></view></view>
+                    </view>
+                    </view>
+                    
+                </view>
+            </view>
+        </view>
+
+        <button class="weui-btn" class='theme_color'>在线预约</button>
+    </view>
+</view>

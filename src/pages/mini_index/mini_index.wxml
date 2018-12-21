@@ -1,0 +1,121 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                    </view>
+                </view>
+                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">搜索</view>
+                </label>
+            </view>
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+        </view>
+        <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+    <view style='padding:20rpx 20rpx 20rpx 20rpx'>
+      <swiper class="swiper" indicator-dots="true" current="0" indicator-active-color="#FE7685">  
+        <block wx:for="{{movies}}" wx:for-index="index" wx:key="{{movies.index}}">  
+          <swiper-item>  
+            <!-- <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>   -->
+              <block wx:for-items="{{carInfoData}}" wx:key="{{carInfoData.id}}">
+                <view class="weui-form-preview" class="box_rectangle">
+                    <view class="weui-form-preview__hd">
+                        <view class="weui-form-preview__item">
+                            <view class="weui-form-preview__label"><image class='myavatar' src="../../images/u36.png" />站内资讯</view>    
+                        </view>
+                    </view>
+                    <view class="weui-form-preview__bd">
+                      <view class="weui-form-preview__item">
+                            <view class="weui-form-preview__label">服务时间（不定）</view>
+                            <view class="weui-form-preview__value">获取精确时间</view>
+                      </view>
+                    </view>
+                    <view class="weui-form-preview__bd">
+                      <view class="weui-form-preview__item">
+                            <view class="weui-form-preview__label">服务地点（不定）</view>
+                            <view class="weui-form-preview__value">获取精确时间</view>
+                      </view>
+                    </view>
+                    <view class="weui-form-preview__bd">
+                      <view class="weui-form-preview__item">
+                            <view class="weui-form-preview__label">服务地点（不定）</view>
+                            <view class="weui-form-preview__value">获取精确时间</view>
+                      </view>
+                    </view>
+                    <view class="weui-form-preview__bd">
+                      <view class="weui-form-preview__item">
+                            <view class="weui-form-preview__label">服务项目（不定）</view>
+                            <view class="weui-form-preview__value">获取精确时间</view>
+                      </view>
+                    </view>
+                    <view class="weui-form-preview__bd">
+                      <view class="weui-form-preview__item">
+                            <view class="weui-form-preview__label">状态(固定）</view>
+                            <view class="weui-form-preview__value"><view style="color:red">(三种状态)？</view></view>
+                      </view>
+                    </view>
+                    <!-- <view class="weui-form-preview__ft">
+                        <navigator url="" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">查看详情</navigator>
+                    </view> -->
+                </view>
+              </block>
+          </swiper-item>  
+        </block>  
+      </swiper> 
+    </view>
+    <view class="page__bd page__bd_spacing">
+        <view class="weui-flex" style='padding: 0 20rpx'>
+            <view class="weui-flex__item">
+                  <navigator url="../training/training" hover-class="none">
+                  <view class="placeholder">
+                    <image style='height:30px;width:30px;line-height:30px' src='../../images/trencher_cap.png' />
+                  </view>
+                  </navigator>
+                  <view class="placeholder_text">报名培训</view>
+            </view>
+            <view class="weui-flex__item">
+                <navigator url="../maternitymatron_list/maternitymatron_list" hover-class='none'>
+                <view class="placeholder">
+                <image style='height:30px;width:30px;line-height:30px' src='../../images/woman.png' />
+                </view>
+                </navigator>
+                <view class="placeholder_text">月嫂列表</view>
+            </view>
+            <view class="weui-flex__item">
+                <navigator url="../video_uploadfirst/video_uploadfirst" hover-class='none'>
+                <view class="placeholder">
+                <image style='height:30px;width:30px;line-height:30px' src='../../images/camera.png' />
+                </view>
+                </navigator>
+                <view class="placeholder_text">视频上传</view>
+            </view>
+        </view>
+    </view>
+</view>

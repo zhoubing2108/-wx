@@ -1,0 +1,62 @@
+<view class="page">
+    <view class="page__bd page__bd_spacing">
+      <view class='boxes_square'>
+        <view class='boxes_rectangle'>
+            <image class='myavatar' src="../../images/cars.png" />
+        </view>
+      </view>
+    </view>
+    <view class="weui-cells weui-cells_after-title" style='font-size:15px'>
+            <view class="page__bd page__bd_spacing">
+                <view style='margin-left:20px'>综合评价</view>
+                <slider show-value value="80"/>
+            </view>
+            <view class='page__bd page__bd_spacing'>
+              <view style='margin-left:20px'>
+              烹饪打分
+              </view>
+              <slider show-value value='50' />
+            </view>
+            <view class='page__bd page__bd_spacing'>
+              <view style='margin-left:20px'>新生儿护理</view>
+              <slider show-value value="70"/>
+            </view>
+            <view class='page__bd page__bd_spacing'>
+              <view style='margin-left:20px'>产妇护理</view>
+              <slider show-value value='80'/>
+            </view>
+            <view class='page__bd page__bd_spacing'>
+              <view style='margin-left:20px'>沟通及职业礼仪</view>
+              <slider show-value value="90" style='padding:0px 0px 10px 0px'/>
+            </view>
+            <view class="weui-cells_after-title">
+                <checkbox-group bindchange="checkboxChange">
+                    <label class="my_weui-cell weui-check__label" wx:for="{{checkboxItems}}" wx:key="value">
+                        <checkbox class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+
+                        <view class="weui-cell__hd weui-check__hd_in-checkbox">
+                            <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+                            <icon class="weui-icon-checkbox_success" type="success" size="23" wx:if="{{item.checked}}"></icon>
+                        </view>
+                        <view class="weui-cell__bd">{{item.name}}</view>
+                    </label>
+                </checkbox-group>
+            </view>
+            <view class="comment-btn">
+                <button 
+                    wx:for="{{riderCommentList}}" 
+                    wx:for-item="item" 
+                    wx:key="item.index"  
+                    bindtap="mycheckboxChange" 
+                    data-value="{{item.value}}" 
+                    data-index="{{index}}"  
+                    checked="{{item.selected}}"
+                    class="btn {{item.selected ? 'btn-selected' : ''}}" >
+                    {{item.title}}
+                </button>
+            </view>
+      </view>
+      <view class="weui-btn-area">
+            <button class="weui-btn" class='theme_btn' bindtap="showTopTips">提交评价</button>
+        </view>
+</view>

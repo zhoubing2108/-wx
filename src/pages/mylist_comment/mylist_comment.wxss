@@ -1,0 +1,63 @@
+/* pages/mylist_comment/mylist_comment.wxss */
+/* slider{
+    margin-bottom: 30px;
+    padding: 10px 0px
+} */
+.my_weui-cell{
+padding: 10px 15px;
+display: -webkit-box;
+display: -webkit-flex;
+display: flex;
+-webkit-box-align: center;
+-webkit-align-items:center;
+align-items: center
+}
+.boxes_square{
+  /* background-color: rgb(214, 208, 210); */
+  width: 100%;
+  height: 200px;
+  line-height: 300px;
+  text-align: center;
+  display: inline-block;
+  margin: 0
+}
+.boxes_rectangle{
+  width: 100%;
+  height: 100px;
+  /* background-color: pink; */
+  border-radius: 0 0 30px 30px
+}
+.myavatar{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: blueviolet
+}
+.comment-btn{
+text-align: center
+}
+.btn{
+      width: 200rpx;
+      height: 100rpx;
+      line-height: 100rpx;
+      font-size: 30rpx;
+      padding: 0;
+      border: 1px solid #dcdcdc;
+      background: #fff;
+      border-radius: 4px;
+      margin: 15rpx 10rpx;
+      text-align: center;
+      display: inline-block
+
+  }
+  .btn-selected{
+      border: 1px solid #FE7685;
+      color: #FE7685
+  }
+  .theme_btn{
+    background-color: #FE7685;
+    width: 30%;
+    box-sizing: content-box
+  }

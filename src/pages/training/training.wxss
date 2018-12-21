@@ -1,0 +1,13 @@
+.down{
+  background-color: rgb(185, 197, 199);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  margin-top: 80px;
+}
+.down view {
+  font-size: 26rpx;
+  /* color: rgb(219, 215, 216); */
+  line-height: 50rpx;
+
+}

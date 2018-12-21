@@ -1,0 +1,33 @@
+/* pages/success/success.wxss */
+/* icon{
+    margin-right: 13px;
+} */
+.page__bd {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    align-items:center;
+}
+.icon-box{
+    align-items: center;
+    text-align: center
+}
+.icon_sp_area {
+    margin-top: 10px;
+    text-align: left;
+}
+.boxes_rectangle{
+  height: 550px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+.boxes_square{
+  height: 300px;
+  width: 100%;
+  padding-top: 100px;
+
+}
+.boxes_squaresecond{
+  width: 100%;
+}

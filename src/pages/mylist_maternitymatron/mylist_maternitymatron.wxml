@@ -1,0 +1,65 @@
+<view class="page">
+    <view class="page__hd">   
+    </view>
+    <view class="page__bd">
+      <block wx:for-items="{{carInfoData}}" wx:key="{{carInfoData.id}}">
+        <view class="weui-form-preview" class="box_rectangle">
+            <view class="weui-form-preview__hd">
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">小儿推拿推广活动</view>
+                    <view bindtap='toggleBtn' id='{{item.id}}'>详情
+                    <view class="weui-badge weui-badge_dot" style="margin-left: 2px;margin-right: 2px;"></view>
+                    </view>
+                    
+                </view>
+            </view>
+
+              <view class='down clearfix {{uhide == item.id? "" : "hidden"}}'>
+                <view class="weui-form-preview__bd">
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">商品</view>
+                        <view class="weui-form-preview__value">{{item.price}}</view>
+                    </view>
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">标题标题</view>
+                        <view class="weui-form-preview__value">{{item.text}}</view>
+                    </view>
+                    <view class="weui-form-preview__item">
+                        <view class="weui-form-preview__label">标题标题</view>
+                        <view class="weui-form-preview__value">{{item.text}}</view>
+                    </view>
+                </view>
+                <view class='feedBack'>意见反馈</view>
+              </view>
+
+            <view class="weui-form-preview__bd">
+              <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">服务时间（不定）</view>
+                    <view class="weui-form-preview__value">获取精确时间</view>
+              </view>
+            </view>
+            <view class="weui-form-preview__bd">
+              <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">服务地点（不定）</view>
+                    <view class="weui-form-preview__value">获取精确时间</view>
+              </view>
+            </view>
+            <view class="weui-form-preview__bd">
+              <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">服务项目（不定）</view>
+                    <view class="weui-form-preview__value">获取精确时间</view>
+              </view>
+            </view>
+            <view class="weui-form-preview__bd">
+              <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">状态(固定）</view>
+                    <view class="weui-form-preview__value"><view style="color:red">(三种状态)？</view></view>
+              </view>
+            </view>
+            <!-- <view class="weui-form-preview__ft">
+                <navigator url="" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">查看详情</navigator>
+            </view> -->
+        </view>
+      </block>
+    </view>
+</view>

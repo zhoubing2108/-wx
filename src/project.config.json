@@ -1,0 +1,139 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.91",
+	"appid": "wx31f7a2e3b527731d",
+	"projectname": "%E6%9C%88%E5%AB%82second",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 16,
+			"list": [
+				{
+					"id": -1,
+					"name": "mini_index",
+					"pathName": "pages/mini_index/mini_index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "预约",
+					"pathName": "pages/reservation/reservation",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "服务评价",
+					"pathName": "pages/service_comment/service_comment",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "选择时间日期",
+					"pathName": "pages/select_time/select_time",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人",
+					"pathName": "pages/personal/personal",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "报名培训",
+					"pathName": "pages/training/training",
+					"query": ""
+				},
+				{
+					"id": 6,
+					"name": "月嫂列表",
+					"pathName": "pages/maternitymatron_list/maternitymatron_list",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "筛选测试",
+					"pathName": "pages/test_shaixuan/test_shaixuan",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "测试精细筛选",
+					"pathName": "pages/test_filter/test_filter",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "收藏",
+					"pathName": "pages/collection/collection",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人订单列表",
+					"pathName": "pages/mylist/mylist",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人订单月嫂",
+					"pathName": "pages/mylist_maternitymatron/mylist_maternitymatron",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人订单评价",
+					"pathName": "pages/mylist_comment/mylist_comment",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "视频上传步骤一",
+					"pathName": "pages/video_uploadfirst/video_uploadfirst",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的绑定",
+					"pathName": "pages/mybinding/mybinding",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "上传步骤二",
+					"pathName": "pages/video_uploadsecond/video_uploadsecond",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "成功页",
+					"pathName": "pages/success/success"
+				}
+			]
+		}
+	}
+}

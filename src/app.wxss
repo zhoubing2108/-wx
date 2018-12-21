@@ -1,0 +1,46 @@
+/** app.wxss **/
+@import "style/weui.wxss";
+.page{
+  width: 100%;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+.page_hd{
+  padding: 8px 0;
+}
+.btn-primary{
+  background-color: #0084ff;
+  color: #FFFFFF;
+}
+.btn-area{
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.center{
+  text-align: center;
+}
+.clearfix{
+  zoom: 1;
+  clear: both;
+}
+.clearfix:after{
+  display: block;
+  height: 0;
+  overflow: hidden;
+  content: "";
+  visibility: hidden;
+  clear: both
+
+}
+.b-shadow{
+  box-shadow: 10rpx 10rpx 20rpx #999;
+
+}
+.hidden{
+  display: none;
+}

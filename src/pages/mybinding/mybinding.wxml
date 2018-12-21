@@ -1,0 +1,17 @@
+<!--pages/mybinding/mybinding.wxml-->
+<!-- <text>pages/mybinding/mybinding.wxml</text> -->
+<view class="page">
+        <view class='weui-cells__title' class='my_tabcontrol'> 请选择客户经理：</view>
+        <view class="weui-cells weui-cells_after-title">
+            <navigator
+              wx:for="{{manager_data}}"
+              wx:for-item="item"
+              wx:key="item.id"
+              url=""
+              class="weui-cell weui-cell_access" 
+              hover-class="weui-cell_active">
+                <view class="weui-cell__bd">{{item.name}}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">{{item.id}}</view>
+            </navigator>
+        </view>
+</view>

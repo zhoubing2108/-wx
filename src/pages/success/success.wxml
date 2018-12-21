@@ -1,0 +1,21 @@
+<!--pages/success/success.wxml-->
+<!-- <text>pages/success/success.wxml</text> -->
+<view class="page">
+    <view class="page__bd">
+      <view class='boxes_rectangle'>
+        <view class='boxes_square'>
+          <view class="icon-box">
+              <icon type="success" size="93"></icon>
+          </view>
+          <view style='font-size:29px'>操作成功</view>
+          <view>预约成功，您可以在"我的订单"中查看</view>
+        </view>
+        <view class='boxes_squaresecond'>
+          <view class="page__bd page__bd_spacing">
+              <button class="weui-btn" type="primary" style='font-size:17px' bindtap='handle_to'>跳转到"我的订单"</button>
+              <button class="weui-btn" type='disable'>返回</button>
+          </view>
+        </view>
+      </view>
+    </view>
+</view>

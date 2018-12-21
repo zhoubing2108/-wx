@@ -1,0 +1,33 @@
+/* pages/mylist_maternitymatron/mylist_maternitymatron.wxss */
+.weui-form-preview{
+    margin-bottom: 10px;
+}
+.box_rectangle{
+  background-color: rgb(255, 255, 253);
+  margin: 25px;
+  border: 3px solid #b3b9b7;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.down{
+  background-color: rgb(185, 197, 199);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px
+}
+.down view {
+  font-size: 26rpx;
+  color: pink;
+  line-height: 50rpx;
+
+}
+.feedBack{
+text-align: center;
+background-color: green;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+padding: 5rpx 0;
+margin:10rpx 0 0 0;
+}
+.weui-form-preview__bd{
+  padding: 0px 15px
+}
